@@ -1,4 +1,4 @@
-package ex_04_RestAssured_HTTP_Methods.Patch;
+package Com.thetestingacdemy.ex_04_RestAssured_HTTP_Methods.Patch;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
