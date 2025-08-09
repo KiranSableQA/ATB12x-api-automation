@@ -16,7 +16,8 @@ public class APITesting010_POST_NonBDDStyle {
     @Test
     public void test_POST_NonBDDStyle_Create_Token() {
 
-        String payload = "{\n" +
+        String payload =
+                "{\n" +
                 "    \"username\" : \"admin\",\n" +
                 "    \"password\" : \"password123\"\n" +
                 "}";
@@ -25,6 +26,7 @@ public class APITesting010_POST_NonBDDStyle {
 
         r = RestAssured.given();
         r.baseUri("https://restful-booker.herokuapp.com");
+        r.baseUri("https://app.demodbi360.com");
         r.basePath("/auth");
         r.contentType(ContentType.JSON);
         r.body(payload).log().all();

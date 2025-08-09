@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/kiran/IdeaProjects/ATB12XAPIAutomationProject/src/test/java/Com/thetestingacdemy/ex_03_TestNG_AllureReoprt">
+        <classes>
+
+            <class name="Com.thetestingacdemy.ex_04_RestAssured_HTTP_Methods.Get.APITesting009_GET_NONBDD_STYLE">
+            </class>
+
+            <class name="Com.thetestingacdemy.ex_04_RestAssured_HTTP_Methods.Post.APITesting011_POST_BDDStyle">
+            </class>
+
+
+            <class name="Com.thetestingacdemy.ex_04_RestAssured_HTTP_Methods.Put.APITesting011_PUT_NONBddStyle">
+            </class>
+
+
+            <class name="Com.thetestingacdemy.ex_04_RestAssured_HTTP_Methods.Patch.APITesting012_PATCH_NONBddStyle">
+            </class>
+
+            <class name="Com.thetestingacdemy.ex_04_RestAssured_HTTP_Methods.Delete.APITesting013_DELETE_NONBddStyle">
+            </class>
+
+        </classes>
+    </test>
+</suite>

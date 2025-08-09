@@ -13,11 +13,12 @@ public class APITesting012_PATCH_NONBddStyle {
     public void test_patch_non_bdd() {
 
 
-        String token = "6f404d90a758a2b";
-        String bookingid = "4010";
+        String token = "6cf13c764c98341";
+        String bookingid = "1186";
 
-        String payloadPatch = "{\n" +
-                "    \"firstname\" : \"Lucky\",\n" +
+        String payloadPatch =
+                "{\n" +
+                "    \"firstname\" : \"Kiran\",\n" +
                 "    \"lastname\" : \"Brown\"\n" +
                 "}";
 
