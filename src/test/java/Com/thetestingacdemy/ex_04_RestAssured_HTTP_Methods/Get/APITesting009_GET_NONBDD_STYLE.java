@@ -14,11 +14,11 @@ public class APITesting009_GET_NONBDD_STYLE {
     String pincode;
 
     @Test
-    public void test_GET_NON_BDD_STYLE(){
+    public void test_GET_NON_BDD_STYLE() {
         pincode = "560048";
 
         // Divide them into 3 parts - R
-        // given() - Part
+        // given() - Part 1
         r = RestAssured.given();
         r.baseUri("https://api.zippopotam.us");
         r.basePath("/IN/" + pincode);
@@ -33,14 +33,15 @@ public class APITesting009_GET_NONBDD_STYLE {
         // Write the further testcases or assertions also here.
 
     }
+
+
     @Test
-    public void test_GET_NON_BDD_STYLE_Negative(){
+    public void test_GET_NON_BDD_STYLE_Negative01() {
 
         // Divide them into 3 parts - R
         pincode = "@";
 
-        // Divide them into 3 parts - R
-        // given() - Part
+        // given() - Part 1
         r = RestAssured.given();
         r.baseUri("https://api.zippopotam.us");
         r.basePath("/IN/" + pincode);
@@ -54,6 +55,27 @@ public class APITesting009_GET_NONBDD_STYLE {
         vr = response.then().log().all();
         vr.statusCode(404);
 
+    }
+
+    @Test
+    public void test_GET_NON_BDD_STYLE_Negative02() {
+
+        // Divide them into 3 parts - R
+        pincode = " ";
+
+        // given() - Part 1
+        r = RestAssured.given();
+        r.baseUri("https://api.zippopotam.us");
+        r.basePath("/IN/" + pincode);
+
+        //  When - Part 2
+        response = r.when().log().all().get();
+        System.out.println(response.asString());
+
+
+        // Then - Part 3 - validation
+        vr = response.then().log().all();
+        vr.statusCode(404);
 
 
     }

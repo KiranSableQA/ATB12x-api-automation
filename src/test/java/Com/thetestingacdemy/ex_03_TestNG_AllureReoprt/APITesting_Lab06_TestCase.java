@@ -4,7 +4,8 @@ import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
 
-public class APITesting_Lab06_TestCase {
+public class APITesting_Lab06_TestCase
+{
     String pincode = "110048";
     @Test
     public void test_GET_POSITIVE_TC1(){

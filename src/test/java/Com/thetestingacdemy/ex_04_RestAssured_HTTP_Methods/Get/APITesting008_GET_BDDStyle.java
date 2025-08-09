@@ -3,11 +3,13 @@ package Com.thetestingacdemy.ex_04_RestAssured_HTTP_Methods.Get;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
-public class APITesting008_GET_BDDStyle {
+public class APITesting008_GET_BDDStyle
+{
     //  BDD Style
 
     @Test
-    public void test_GET_POSITIVE(){
+    public void test_GET_POSITIVE()
+    {
         String pincode = "560058";
         pincode = "110048";
         RestAssured
@@ -19,7 +21,5 @@ public class APITesting008_GET_BDDStyle {
                 .then()
                 .log().all().statusCode(200);
     }
-
-
 
 }
